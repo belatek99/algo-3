@@ -1,0 +1,14 @@
+PROCEDURE cards(T:ARRAY_OF type[50] )
+VAR
+tmp,i,j:INTEGER
+BEGIN
+ FOR i FROM 2 TO T.lenght-1 STEP 1  DO
+    tmp:=T[i]
+    j:=i
+         while (j > 1) and (T[j-1] > Tmp)   do
+                T[j]:=t[j-1]
+                j:=j-1
+        end while
+    T[j]:=tmp;
+END_FOR
+END
